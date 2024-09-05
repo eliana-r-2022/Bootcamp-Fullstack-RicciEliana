@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Formulario de registro</title>
+</head>
+<body>
+    <!--Creación de formulario - Tarea 1-->
+    <div class="container-form">
+        <h2>Registro de Usuario</h2>
+        <div class="content">
+            <form action="#" method="post">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="apellido">Apellido</label>
+                <input type="text" id="apellido" name="apellido" required>
+               
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                
+               <label for="fecha de nacimiento">Fecha de nacimiento</label>
+                <input type="date" id="fecha de nacimiento" name="fecha de nacimiento" required>
+               
+                <label for="país">País</label><br><br>
+                <select id="país" name="país" required>
+                    <option value="país">Seleccionar un país</option>
+                    <option value="argentina">Argentina</option>
+                    <option value="brasil">Brasil</option>
+                    <option value="bolivia">Bolivia</option>
+                    <option value="chile">Chile</option>
+                    <option value="paraguay">Paraguay</option>
+                    <option value="perú">Perú</option>
+                    <option value="uruguay">Uruguay</option>
+                </select>
+                <br><br><input type="submit" value="Enviar">
+                <div class="botonera">
+                    <button type="button" id="estilo1"  class="estilo1">Estilo 1</button> 
+                    <button type="button" id="alto-contraste" class="alto-contraste">Estilo de Alto Contraste</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="validaciones.js"></script>
+    <script src="cambiarEstilos.js"></script>
+</body>
+
+</html>
